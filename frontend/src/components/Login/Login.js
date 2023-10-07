@@ -56,7 +56,7 @@ function Login() {
   };
   
   return(
-    <div className="flex flex-col justify-center items-center w-screen min-h-screen bg-orange-100 py-8 px-4">
+    <div className="flex flex-col justify-center items-center w-screen min-h-screen bg-orange-100 mt-12 py-8 px-4">
       <h2 className="text-3xl mb-2">Login</h2>
       <p className="text-lg text-center mb-4">{
         credentials.role === "user" ? "Login with the credentials that you recieved in mail" : null
