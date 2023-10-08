@@ -14,6 +14,7 @@ function Login() {
   const handleSubmit = e => {
     e.preventDefault();
     alert("form submitted");
+    navigate('/dashboard', {state: {data: credentials.role}});
   }
   
   /*const handleSubmit = async (e) => {
@@ -44,7 +45,8 @@ function Login() {
     const json = await response.json();
     if (json.success) {
       localStorage.setItem('access', json.success);
-      navigate('/dashboard');
+      // navigate('/dashboard');
+      navigate('/dashboard', {state: {data: credentials.role}});
     } else {
       document.querySelector('.errorDiv').textContent = "Wrong username or password entered";
       }
