@@ -1,10 +1,9 @@
 import {useState} from 'react';
-// import {useNavigate, Link} from 'react-router-dom';
-import {Link} from 'react-router-dom';
+import {useNavigate, Link} from 'react-router-dom';
 import Button from '../Button/Button';
 
 function Login() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
     role: "user",
     username: "",

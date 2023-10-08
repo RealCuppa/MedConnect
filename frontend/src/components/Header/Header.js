@@ -37,7 +37,7 @@ function Header() {
                 </li>))
             }
             <Link to="/login" className="block md:inline-block text-gray-800 hover:text-blue-400 duration-500 md:ml-8 md:mr-4 md:my-0 my-7 font-semibold">Login</Link>
-            <Button className='btn bg-[#ffb800] text-white font-semibold px-3 py-1 rounded duration-500 md:static' label="Get Started" onclick={() => navigate("/register")}></Button>
+            <Button className='btn bg-[#ffb800] text-white font-semibold px-3 py-1 rounded duration-500 md:static' label="Get Started" onclick={() => navigate("/signup")}></Button>
         </ul>
        </div>
     </div>
